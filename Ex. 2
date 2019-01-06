@@ -1,0 +1,20 @@
+#include "pch.h"
+#include <iostream>
+using namespace std;
+int main()
+
+{
+	int x, c, o;
+	cin >> x;
+	c = x; o = 0;
+	while (c > 0)
+	{
+		o = o * 10 + c % 10;
+		c = c / 10;
+	}
+	if (x == o) cout << "Numarul este simetric";
+	else cout << "Numarul nu este simetric";
+	return 0;
+}
+   
+
